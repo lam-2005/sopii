@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="CSS/cart.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Actor&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/footer.css" />
+  </head>
+  <body>
+    <header>
+      <header class="header">
+        <div class="header_1">
+          <nav class="container navbar">
+            <div class="navbar_menu-1">
+              <a href="" class="menu1">Kênh Người Bán</a>
+              <div class="downApp span">
+                <a href="" class="menu1">Tải Ứng Dụng</a>
+              </div>
+              <div class="menu1 connect">Kết nối</div>
+              <div class="menu1 social_icon">
+                <a href="" title="Kết nối Facebook"
+                  ><i class="bx bxl-facebook-circle"></i
+                ></a>
+                <a href="" title="Kết nối Instagram"
+                  ><i class="bx bxl-instagram-alt"></i
+                ></a>
+              </div>
+            </div>
+            <!-- <div class="navbar_space"></div> -->
+            <ul class="navbar_menu-2">
+              <li class="list">
+                <div class="list_link">
+                  <a href="" class="link">
+                    <svg
+                      viewBox="3 2.5 14 14"
+                      x="0"
+                      y="0"
+                      class="svg-icon icon-notification-2"
+                    >
+                      <path
+                        d="m17 15.6-.6-1.2-.6-1.2v-7.3c0-.2 0-.4-.1-.6-.3-1.2-1.4-2.2-2.7-2.2h-1c-.3-.7-1.1-1.2-2.1-1.2s-1.8.5-2.1 1.3h-.8c-1.5 0-2.8 1.2-2.8 2.7v7.2l-1.2 2.5-.2.4h14.4zm-12.2-.8.1-.2.5-1v-.1-7.6c0-.8.7-1.5 1.5-1.5h6.1c.8 0 1.5.7 1.5 1.5v7.5.1l.6 1.2h-10.3z"
+                      ></path>
+                      <path
+                        d="m10 18c1 0 1.9-.6 2.3-1.4h-4.6c.4.9 1.3 1.4 2.3 1.4z"
+                      ></path>
+                    </svg>
+                    <span class="menu2_list">Thông Báo</span>
+                  </a>
+                </div>
+              </li>
+              <li class="list">
+                <div class="list_link">
+                  <a href="" class="link">
+                    <svg
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      class="svg-icon icon-help-center"
+                    >
+                      <g
+                        fill="none"
+                        fill-rule="evenodd"
+                        transform="translate(1)"
+                      >
+                        <circle cx="7" cy="8" r="7" stroke="#fff"></circle>
+                        <path
+                          fill="#fff"
+                          d="m6.871 3.992c-.814 0-1.452.231-1.914.704-.462.462-.693 1.089-.693 1.892h1.155c0-.484.099-.858.297-1.122.22-.319.583-.473 1.078-.473.396 0 .715.11.935.33.209.22.319.517.319.902 0 .286-.11.55-.308.803l-.187.209c-.682.605-1.1 1.056-1.243 1.364-.154.286-.22.638-.22 1.045v.187h1.177v-.187c0-.264.055-.506.176-.726.099-.198.253-.396.462-.572.517-.451.825-.737.924-.858.275-.352.418-.803.418-1.342 0-.66-.22-1.188-.66-1.573-.44-.396-1.012-.583-1.716-.583zm-.198 6.435c-.22 0-.418.066-.572.22-.154.143-.231.33-.231.561 0 .22.077.407.231.561s.352.231.572.231.418-.077.572-.22c.154-.154.242-.341.242-.572s-.077-.418-.231-.561c-.154-.154-.352-.22-.583-.22z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <span class="menu2_list">Hỗ Trợ</span>
+                  </a>
+                </div>
+              </li>
+              <li class="list language">
+                <div class="list_link">
+                  <a href="" class="link">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8.00004C14.6673 4.31814 11.6825 1.33337 8.00065 1.33337C4.31875 1.33337 1.33398 4.31814 1.33398 8.00004C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M5.33464 8.00004C5.33464 11.6819 6.52854 14.6667 8.0013 14.6667C9.47406 14.6667 10.668 11.6819 10.668 8.00004C10.668 4.31814 9.47406 1.33337 8.0013 1.33337C6.52854 1.33337 5.33464 4.31814 5.33464 8.00004Z"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M1.33398 8H14.6673"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="menu2_list">Tiếng Việt</span>
+                    <svg
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      width="12"
+                      height="12"
+                      color="#fff"
+                      class="arrow_language"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6 8.146L11.146 3l.707.707-5.146 5.147a1 1 0 01-1.414 0L.146 3.707.854 3 6 8.146z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                <ul class="language_bar">
+                  <li><a href="?lang=vi" class="menu2_list">Tiếng Việt</a></li>
+                  <li><a href="?lang=en" class="menu2_list">English</a></li>
+                </ul>
+              </li>
+              <li><a href="" class="login user">Đăng Nhập</a></li>
+              <li><a href="" class="signUp user">Đăng Ký</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header_2">
+          <div class="container navbar_header2">
+            <div class="item_nav logoHeader">
+              <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="" />
+                <div class="logoName">Sopii</div>
+              </a>
+              <div class="separate"></div>
+              <div class="cartPage_title">Giỏ Hàng</div>
+            </div>
+
+            <div class="item_nav search searchAction">
+              <form action="" role="search" class="form-search">
+                <div class="searchBar">
+                  <div class="searchBar-input">
+                    <input
+                      type="text"
+                      id="search"
+                      placeholder="Sale vẫn nhiệt"
+                    />
+                    <button id="searchAction" type="submit">
+                      <i class="bx bx-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+    </header>
+    <div style="display: contents">
+      <div class="container">
+        <div class="bodyCart">
+          <div class="noCart">
+            <img
+              src="img/no-cart.png"
+              alt=""
+              class="basket_cartList-noCart-img"
+            />
+            <div class="basket_cartList-noCart-note">
+              Giỏ hàng của bạn còn trống
+            </div>
+            <a href="index.html" class="btnNoCart"
+              ><button class="btn-product">MUA NGAY</button></a
+            >
+          </div>
+          <div class="hasCart" style="display: block">
+            <div class="cart_list_title">
+              <div class="cart_list_title_content">
+                <div class="cart_list_checkBox">
+                  <input
+                    type="checkbox"
+                    id="checkBox_cartFirst"
+                    class="mainCheckbox"
+                  />
+                  <label for="checkBox_cartFirst"></label>
+                </div>
+                <div class="cart_list_title_1">Sản Phẩm</div>
+                <div class="cart_list_title_2">Đơn Giá</div>
+                <div class="cart_list_title_3">Số Lượng</div>
+                <div class="cart_list_title_4">Số Tiền</div>
+                <div class="cart_list_title_5">Thao Tác</div>
+              </div>
+            </div>
+            <div class="cart_list_products"></div>
+            <section class="pro_detail cart_list_action">
+              <!-- <div class="cart_list_action_contents">
+                <div class="cart_list_checkBox">
+                  <input
+                    type="checkbox"
+                    id="checkBox_cartLast"
+                    class="mainCheckbox"
+                  />
+                  <label for="checkBox_cartLast"></label>
+                </div>
+                <label for="checkBox_cartLast"
+                  ><div class="selectAll">
+                    Chọn Tất Cả (<span>1</span>)
+                  </div></label
+                >
+                <div class="remove">Xóa</div>
+                <div class="save">Lưu vào mục Đã thích</div>
+              </div>
+              <div class="totalAndAction">
+                <div class="totalTitle">
+                  Tổng thanh toán (<span>0</span> Sản phẩm):
+                </div>
+                <div class="totalPrice">₫<span>0</span></div>
+                <a href="" class="btnBuy"
+                  ><button class="btn-product">MUA NGAY</button></a
+                >
+              </div> -->
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_content" style="background-color: #fbfbfb">
+        <div class="container f-content-1">
+          <div class="fcontent_1">
+            <div class="fcontent">
+              <div class="fcontent_title">chăm sóc khách hàng</div>
+              <ul class="fcontent_ul">
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">trung tâm trợ giúp</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">sopii blog</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">sopii mall</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">hướng dẫn mua hàng</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">hướng dẫn bán hàng</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">thanh toán</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">sopii xu</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">vận chuyển</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">trả tiền & hoàn tiền</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">chăm sóc khách hàng</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">chính sách bảo hành</a>
+                </li>
+              </ul>
+            </div>
+            <div class="fcontent">
+              <div class="fcontent_title">về sopii</div>
+              <ul class="fcontent_ul">
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">giới thiệu về sopii việt nam</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">tuyển dụng</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">điều khoản sopii</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">chính sách bảo mật</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">chính hãng</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">kênh người bán</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">flash sales</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">chương trình tiếp thị liên kết sopii</a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">liên hệ với truyền thông</a>
+                </li>
+              </ul>
+            </div>
+            <div class="fcontent">
+              <div class="fcontent_title">thanh toán</div>
+              <ul class="fcontent_ul-img">
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/thanhtoan1.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/thanhtoan2.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/thanhtoan3.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/thanhtoan4.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/thanhtoan5.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/thanhtoan6.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/thanhtoan7.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/thanhtoan8.png" alt="" /></a>
+                </li>
+              </ul>
+              <div class="fcontent_title title-2">đơn vị vận chuyển</div>
+              <ul class="fcontent_ul-img">
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move1.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move2.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move3.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move4.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move5.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move6.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move7.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move8.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move9.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move10.png" alt="" /></a>
+                </li>
+                <li class="fcontent_img" style="list-style: none">
+                  <a target="_blank"><img src="img/move11.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="fcontent">
+              <div class="fcontent_title">theo dõi chúng tôi trên</div>
+              <ul class="fcontent_ul">
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">
+                    <img src="img/blackfb.png" alt="" class="icon-footer" />
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">
+                    <img src="img/blackins.png" alt="" class="icon-footer" />
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li class="fcontent_li" style="list-style: none">
+                  <a href="">
+                    <img src="img/blacklink.png" alt="" class="icon-footer" />
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="fcontent">
+              <div class="fcontent_title">tải ứng dụng sopii ngay thôi</div>
+              <div class="link_footer">
+                <a href=""><img src="img/qrfoot.png" alt="" class="qr" /></a>
+                <div class="link_down">
+                  <a href=""><img src="img/appstore.png" alt="" /></a>
+                  <a href=""><img src="img/ggplay.png" alt="" /></a>
+                  <a href=""><img src="img/appgallery.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fcontent_2">
+            <div class="fcontent_2__copyright">
+              <a href="" style="color: gray" class="copyrightt__link"
+                >粤ICP备17161890号</a
+              >
+              <span style="margin-left: 4px"
+                >Copyright © 2024 深圳虾皮信息技术有限责任公司. All rights
+                reserved.</span
+              >
+            </div>
+            <div class="fcontent_2__area">
+              <div class="area-title">Quốc gia & Khu vực:</div>
+              <div class="area">Singapore</div>
+              <div class="area">Indonesia</div>
+              <div class="area">Thái Lan</div>
+              <div class="area">Malaysia</div>
+              <div class="area">Việt Nam</div>
+              <div class="area">Philippines</div>
+              <div class="area">Brazil</div>
+              <div class="area">México</div>
+              <div class="area">Colombia</div>
+              <div class="area">Chile</div>
+              <div class="area">Đài Loan</div>
+            </div>
+          </div>
+        </div>
+        <div class="f-content-2" style="background-color: #f5f5f5">
+          <div class="container allContentFooter">
+            <div class="allContentFooter__policy">
+              <div class="policy">
+                <a href="" style="color: gray">chính sách bảo mật</a>
+              </div>
+              <div class="policy">
+                <a href="" style="color: gray">quy chế hoạt động</a>
+              </div>
+              <div class="policy">
+                <a href="" style="color: gray">chính sách vận chuyển</a>
+              </div>
+              <div class="policy">
+                <a href="" style="color: gray"
+                  >chính sách trả hàng và hoàn tiền</a
+                >
+              </div>
+            </div>
+            <div class="allContentFooter__subcribed">
+              <div class="subcribed__img">
+                <a href=""><img src="img/bct.png" alt="" /></a>
+              </div>
+              <div class="subcribed__img">
+                <a href=""><img src="img/bct.png" alt="" /></a>
+              </div>
+              <div class="subcribed__img">
+                <a href=""><img src="img/vantay.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="allContentFooter__address" style="font-size: 0.725rem">
+              <div class="company">Công ty TNHH Shopee</div>
+              <div class="paragraph">
+                Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu
+                Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt
+                Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn
+              </div>
+              <div class="paragraph">
+                Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại
+                liên hệ: 024 73081221 (ext 4678)
+              </div>
+              <div class="paragraph">
+                Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội
+                cấp lần đầu ngày 10/02/2015
+              </div>
+              <div class="paragraph">
+                © 2015 - Bản quyền thuộc về Công ty TNHH Shopee
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="Javascript/cart.js"></script>
+  </body>
+</html>
